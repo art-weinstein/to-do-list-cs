@@ -2,15 +2,16 @@
 @using System.Collections.Generic;
 @using System.Linq;
 
+
 <h1>To Do List</h1>
-  @if (Model.Count == 0)
+  @if (Model["items"].Count == 0)
   {
     <p>There are no items in the list.</p>
   }
   <ul>
-    @foreach (Item item in Model)
+    @foreach (Item item in Model["items"])
     {
-      <li><a href="/items/@item.Id">@item.Description @item.Priority</a></li>
+      <li><a href="/items/@item.Id">@item.Description</a></li>
     }
   </ul>
 

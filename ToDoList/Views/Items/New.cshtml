@@ -1,12 +1,12 @@
-<form action="/items" method="post">
+<form action="/categories/@Model.Id/items" method="post">
   <label for="description">Add a new item</label>
   <input id="description" name="description" type="text">
-  <label for="priority">Set priority:</label>
+  <!-- <label for="priority">Set priority:</label>
   <select name="priority" id="priority">
     <option value="High">High</option>
     <option value="Medium">Medium</option>
     <option value="Low">Low</option>
-  </select>
+  </select> -->
 
   <button type="submit">Submit</button>
 </form>
